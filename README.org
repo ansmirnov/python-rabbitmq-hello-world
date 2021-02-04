@@ -152,7 +152,7 @@ channel.queue_declare(queue='hello')
 
 #+BEGIN_SRC python
 def callback(ch, method, properties, body):
-    print(" [x] Received %r" % body)
+    print("Received %r" % body)
 #+END_SRC
 
 *** Set callback
