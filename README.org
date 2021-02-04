@@ -15,6 +15,7 @@
   - [[#consumer][Consumer]]
     - [[#imports-1][Imports]]
     - [[#parameters-1][Parameters]]
+    - [[#creds-1][Creds]]
 
 ** Environment description
 
@@ -113,5 +114,11 @@ import pika
 RABBITMQ_HOST = os.environ.get("RABBITMQ_HOST")
 RABBITMQ_USER = os.environ.get("RABBITMQ_USER")
 RABBITMQ_PASSWORD = os.environ.get("RABBITMQ_PASSWORD")
+#+END_SRC
+
+*** Creds
+
+#+BEGIN_SRC python
+credentials = pika.PlainCredentials(RABBITMQ_USER, RABBITMQ_PASSWORD)
 #+END_SRC
 
