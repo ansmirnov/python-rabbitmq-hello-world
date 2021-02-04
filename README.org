@@ -22,6 +22,7 @@
     - [[#callback][Callback]]
     - [[#set-callback][Set callback]]
     - [[#start-consuming][Start consuming]]
+  - [[#references][References]]
 
 ** Environment description
 
@@ -166,3 +167,7 @@ channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True
 #+BEGIN_SRC python
 channel.start_consuming()
 #+END_SRC
+
+** References
+
+1. https://www.rabbitmq.com/tutorials/tutorial-one-python.html
