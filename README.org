@@ -3,6 +3,7 @@
 ** Contents                                                           :TOC_3:
   - [[#environment-description][Environment description]]
     - [[#python-requirements][Python requirements]]
+  - [[#producer][Producer]]
 
 ** Environment description
 
@@ -15,3 +16,9 @@
 #+BEGIN_SRC conf :tangle requirements.txt
 pika==1.1.0
 #+END_SRC
+
+** Producer
+   :PROPERTIES:
+   :header-args: :session *shell rabbitmq producer* :results silent raw
+   :END:
+
