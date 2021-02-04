@@ -13,6 +13,7 @@
     - [[#publish-message][Publish message]]
     - [[#close-connection][Close connection]]
   - [[#consumer][Consumer]]
+    - [[#imports-1][Imports]]
 
 ** Environment description
 
@@ -93,3 +94,14 @@ connection.close()
    :PROPERTIES:
    :header-args: :session *shell rabbitmq consumer* :results silent raw
    :END:
+
+*** Imports
+
+#+BEGIN_SRC python
+import os
+import sys
+#+END_SRC
+
+#+BEGIN_SRC python
+import pika
+#+END_SRC
