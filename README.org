@@ -16,6 +16,7 @@
     - [[#imports-1][Imports]]
     - [[#parameters-1][Parameters]]
     - [[#creds-1][Creds]]
+    - [[#connection-1][Connection]]
 
 ** Environment description
 
@@ -122,3 +123,10 @@ RABBITMQ_PASSWORD = os.environ.get("RABBITMQ_PASSWORD")
 credentials = pika.PlainCredentials(RABBITMQ_USER, RABBITMQ_PASSWORD)
 #+END_SRC
 
+*** Connection
+
+#+BEGIN_SRC python
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(host=RABBITMQ_HOST, credentials=credentials)
+)
+#+END_SRC
