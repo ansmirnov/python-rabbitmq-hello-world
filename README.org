@@ -11,6 +11,7 @@
     - [[#channel][Channel]]
     - [[#declare-queue][Declare queue]]
     - [[#publish-message][Publish message]]
+    - [[#close-connection][Close connection]]
 
 ** Environment description
 
@@ -79,5 +80,11 @@ channel.queue_declare(queue='hello')
 channel.basic_publish(exchange='',
                       routing_key='hello',
                       body='Hello World!')
+#+END_SRC
+
+*** Close connection
+
+#+BEGIN_SRC python
+connection.close()
 #+END_SRC
 
