@@ -8,6 +8,7 @@
     - [[#parameters][Parameters]]
     - [[#creds][Creds]]
     - [[#connection][Connection]]
+    - [[#channel][Channel]]
 
 ** Environment description
 
