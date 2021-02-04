@@ -21,6 +21,7 @@
     - [[#declare-queue-1][Declare queue]]
     - [[#callback][Callback]]
     - [[#set-callback][Set callback]]
+    - [[#start-consuming][Start consuming]]
 
 ** Environment description
 
@@ -158,4 +159,10 @@ def callback(ch, method, properties, body):
 
 #+BEGIN_SRC python
 channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+#+END_SRC
+
+*** Start consuming
+
+#+BEGIN_SRC python
+channel.start_consuming()
 #+END_SRC
