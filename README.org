@@ -19,6 +19,7 @@
     - [[#connection-1][Connection]]
     - [[#declare-queue-1][Declare queue]]
     - [[#callback][Callback]]
+    - [[#set-callback][Set callback]]
 
 ** Environment description
 
@@ -146,3 +147,8 @@ def callback(ch, method, properties, body):
     print(" [x] Received %r" % body)
 #+END_SRC
 
+*** Set callback
+
+#+BEGIN_SRC python
+channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+#+END_SRC
