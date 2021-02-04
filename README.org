@@ -10,6 +10,7 @@
     - [[#connection][Connection]]
     - [[#channel][Channel]]
     - [[#declare-queue][Declare queue]]
+    - [[#publish-message][Publish message]]
 
 ** Environment description
 
@@ -70,5 +71,13 @@ channel = connection.channel()
 
 #+BEGIN_SRC python
 channel.queue_declare(queue='hello')
+#+END_SRC
+
+*** Publish message
+
+#+BEGIN_SRC python
+channel.basic_publish(exchange='',
+                      routing_key='hello',
+                      body='Hello World!')
 #+END_SRC
 
