@@ -18,6 +18,7 @@
     - [[#creds-1][Creds]]
     - [[#connection-1][Connection]]
     - [[#declare-queue-1][Declare queue]]
+    - [[#callback][Callback]]
 
 ** Environment description
 
@@ -137,3 +138,11 @@ connection = pika.BlockingConnection(
 #+BEGIN_SRC python
 channel.queue_declare(queue='hello')
 #+END_SRC
+
+*** Callback
+
+#+BEGIN_SRC python
+def callback(ch, method, properties, body):
+    print(" [x] Received %r" % body)
+#+END_SRC
+
