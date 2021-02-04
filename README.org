@@ -12,6 +12,7 @@
     - [[#declare-queue][Declare queue]]
     - [[#publish-message][Publish message]]
     - [[#close-connection][Close connection]]
+  - [[#consumer][Consumer]]
 
 ** Environment description
 
@@ -88,3 +89,7 @@ channel.basic_publish(exchange='',
 connection.close()
 #+END_SRC
 
+** Consumer
+   :PROPERTIES:
+   :header-args: :session *shell rabbitmq consumer* :results silent raw
+   :END:
