@@ -4,6 +4,7 @@
   - [[#environment-description][Environment description]]
     - [[#python-requirements][Python requirements]]
   - [[#producer][Producer]]
+    - [[#imports][Imports]]
 
 ** Environment description
 
@@ -21,4 +22,14 @@ pika==1.1.0
    :PROPERTIES:
    :header-args: :session *shell rabbitmq producer* :results silent raw
    :END:
+
+*** Imports
+
+#+BEGIN_SRC python
+import os
+#+END_SRC
+
+#+BEGIN_SRC python
+import pika
+#+END_SRC
 
