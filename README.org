@@ -38,7 +38,7 @@ pika==1.1.0
 
 ** Producer
    :PROPERTIES:
-   :header-args: :session *shell rabbitmq producer* :results silent raw
+   :header-args: :session *shell rabbitmq producer* :results silent raw :tangle src/producer.py
    :END:
 
 *** Imports
@@ -101,7 +101,7 @@ connection.close()
 
 ** Consumer
    :PROPERTIES:
-   :header-args: :session *shell rabbitmq consumer* :results silent raw
+   :header-args: :session *shell rabbitmq consumer* :results silent raw :tangle src/consumer.py
    :END:
 
 *** Imports
